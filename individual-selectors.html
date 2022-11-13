@@ -5,6 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Individual Selectors</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background: rgb(233, 202, 202);
+        width: 500px;
+        height: 500px;
+      }
+
+      p {
+        font-size: 18px;
+        padding: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 700;
+      }
+
+      p.para-1 {
+        border: 10px solid green;
+        color: red;
+        padding: 10px;
+      }
+
+      span {
+        color: rgb(220, 58, 13);
+        font-size: 20px;
+        padding: 5px;
+      }
+
+      .container span {
+        padding: 15px;
+        width: 450px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <p class="para-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </p>
+
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut?
+      </span>
+
+      <p class="para-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </p>
+
+      <p class="para-3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </p>
+
+      <p class="para-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </p>
+    </section>
+  </body>
 </html>
