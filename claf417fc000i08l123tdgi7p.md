@@ -384,7 +384,112 @@ You can also select the elements with the help of class selector and apply the s
 </html>
 ``` 
 
-
 **Output**:
 
 ![class_selector.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668378180896/RlN0G2rPp.png align="left")
+
+
+## ID Selector
+
+**ID** Selector too behave in same way as of **class** selector and selects the id attribute from the webpage.
+
+**Syntax**:
+
+```#id_value { style properties }```
+
+**For example**:
+
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Class and Id Selectors in CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: bisque;
+        width: 500px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+
+      /* Class selector */
+      .para-1 {
+        color: rgb(11, 115, 80);
+      }
+
+      .para-2 {
+        color: rgb(2, 87, 156);
+      }
+
+      .para-3 {
+        color: rgb(156, 2, 25);
+      }
+
+      .laguages {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 20px;
+      }
+
+      .laguage {
+        list-style: circle;
+      }
+
+      .laguages li {
+        list-style: lower-greek;
+        color: rgb(62, 103, 237);
+      }
+
+      body .heading {
+        font-size: 28px;
+        font-weight: 700;
+        display: inline;
+        background-color: aqua;
+      }
+
+      .laguages li {
+        list-style: lower-greek;
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(62, 103, 237);
+      }
+
+      #list-33 > li {
+        padding: 20px;
+        background-color: rgb(148, 125, 170);
+        color: rgba(47, 93, 81, 0.533);
+      }
+
+      body #para-11 {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="para-11" class="para-1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, aliquid?
+    </p>
+
+    <h2 id="heading-11" class="heading">Web Technology</h2>
+    <ul id="list-33" class="laguages">
+      <li class="laguage">HTML</li>
+      <li class="laguage">CSS</li>
+      <li class="laguage">JavaScript</li>
+    </ul>
+  </body>
+</html>
+``` 
+
+
+**Output**:
+
+![id.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668382838683/_QlYzWWRE.png align="left")
+
+
