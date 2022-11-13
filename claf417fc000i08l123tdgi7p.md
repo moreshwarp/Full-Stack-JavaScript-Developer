@@ -254,3 +254,137 @@ elementName|tagname {
 
 ## Class Selector 
 
+The class selector selects an elements from the web page which matches it **class attribute** and applies the *subject to style* to them i.e. CSS Styling.
+
+
+```.class_name { style properties }``` 
+
+here, **.** instructs the *CSS* language to match the attribute members. This is very common patter in CSS, where special character or set of characters are is used to define the selector type.
+
+Every time **.** is used it looks for the class attribute in webpage and applies the CSS i.e. which is being subjected to it.
+ 
+Below is the example for the class selector
+
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Class and Id Selectors in CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: bisque;
+        width: 500px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+
+      /* Class selector */
+      .para-1 {
+        color: rgb(11, 115, 80);
+      }
+
+      .para-2 {
+        color: rgb(2, 87, 156);
+      }
+
+      .para-3 {
+        color: rgb(156, 2, 25);
+      }
+
+      .laguages {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 20px;
+      }
+
+      .laguage {
+        list-style: circle;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="para-1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, aliquid?
+    </p>
+
+    <p class="para-2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quam
+      obcaecati libero.
+    </p>
+
+    <p class="para-3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      deserunt iste similique voluptate numquam ut exercitationem repellat
+      dolorum rem inventore?
+    </p>
+
+    <ul class="laguages">
+      <li class="laguage">HTML</li>
+      <li class="laguage">CSS</li>
+      <li class="laguage">JavaScript</li>
+    </ul>
+  </body>
+</html>
+``` 
+
+**Output**:
+
+![class_selector.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668377584864/ZfN2tIt8t.png align="left")
+
+You can also select the elements with the help of class selector and apply the styling based on those selections as well.
+
+**For example:**
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Class and Id Selectors in CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: bisque;
+        width: 500px;
+        font-size: 32px;
+      }
+
+      body .heading {
+        font-size: 28px;
+        font-weight: 700;
+        display: inline;
+        background-color: aqua;
+      }
+
+      .laguages li {
+        list-style: lower-greek;
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(62, 103, 237);
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="heading">Web Technology</h2>
+    <ul class="laguages">
+      <li class="laguage">HTML</li>
+      <li class="laguage">CSS</li>
+      <li class="laguage">JavaScript</li>
+    </ul>
+  </body>
+</html>
+``` 
+
+
+**Output**:
+
+![class_selector.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668378180896/RlN0G2rPp.png align="left")
