@@ -25,7 +25,7 @@ The CSS value added here is applicable across all the elements within the HTML w
 
 
 
-For example
+**For example**
 
 ```
       * {
@@ -36,14 +36,97 @@ For example
 
 Here, the color red would be applicable across all the text which will be rendered via HTML and along with it background.
 
+
 ### HTML Code  Block
 
-![universal-selector-code.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668329716724/Stnh5GoEU.png align="left")
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Selectors</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
+      * p {
+        background-color: beige;
+        padding: 20px;
+        margin: 20px 0;
+      }
 
-### Output
+      *.container {
+        background: rgb(233, 202, 202);
+        width: 550px;
+        height: 500px;
+        color: #777;
+      }
 
-![universal-selector-ui.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668329760082/OyiUjuOLR.png align="left")
+      p {
+        font-size: 18px;
+        padding: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 700;
+      }
+
+      p.para-1 {
+        border: 10px solid green;
+        color: red;
+        padding: 10px;
+      }
+
+      section span {
+        background-color: rgb(75, 68, 68);
+        color: rgb(254, 244, 241);
+        font-size: 20px;
+        padding: 15px;
+      }
+
+      .container span {
+        padding: 15px;
+        width: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <p class="para-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </p>
+
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut?
+      </span>
+
+      <div class="para-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </div>
+
+      <p class="para-3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </p>
+
+      <div class="para-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </div>
+    </section>
+  </body>
+</html>
+``` 
+
+**Output**
+
+![universal-output.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668375721320/FYxIQ9t9F.png align="left")
+
 
 ## `@namespace`
 
@@ -62,7 +145,7 @@ For Example:
 
 ![star-selector.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668331595781/B0jlRji8l.png align="left")
 
-Output:
+**Output**:
 
 ![selector-class-ui.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668331624210/R2S5Qdfu2.png align="left")
 
@@ -80,9 +163,94 @@ elementName|tagname {
 ```
 **For Example**
 
-![individual-selectors-code.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668332944028/dIDh3GfRh.png align="left")
 
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Selectors</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-**Output**
+      * p {
+        background-color: beige;
+        padding: 20px;
+        margin: 20px 0;
+      }
 
-![individual-element.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668333075267/kKnZlrlkc.png align="left")
+      *.container {
+        background: rgb(233, 202, 202);
+        width: 550px;
+        height: 500px;
+        color: #777;
+      }
+
+      p {
+        font-size: 18px;
+        padding: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 700;
+      }
+
+      p.para-1 {
+        border: 10px solid green;
+        color: red;
+        padding: 10px;
+      }
+
+      section span {
+        background-color: rgb(75, 68, 68);
+        color: rgb(254, 244, 241);
+        font-size: 20px;
+        padding: 15px;
+      }
+
+      .container span {
+        padding: 15px;
+        width: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <p class="para-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </p>
+
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut?
+      </span>
+
+      <div class="para-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </div>
+
+      <p class="para-3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </p>
+
+      <div class="para-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odit
+        earum eaque nostrum deserunt maiores!
+      </div>
+    </section>
+  </body>
+</html>
+
+``` 
+
+**Output**:
+![output_element_selector.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668375785607/bBXk36x54.png align="left")
+
+## Class Selector 
+
