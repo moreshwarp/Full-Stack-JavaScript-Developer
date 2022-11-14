@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chained Selectors In CSS</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .container {
+        background-color: rgb(219, 255, 205);
+        width: 400px;
+      }
+
+      .container div {
+        padding: 20px;
+      }
+
+      .container .test-1,
+      .container .test-3 {
+        background-color: azure;
+      }
+
+      .container .test-1.test-2.test-3 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      section div {
+        font-size: 24px;
+        padding: 20px;
+        margin: 5px 0;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="test-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt amet,
+        tempore excepturi reiciendis ducimus officiis sequi quidem tenetur.
+      </div>
+      <div class="test-2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id
+        voluptatum accusantium!
+      </div>
+      <div class="test-1 test-2 test-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga fugit
+        accusantium deleniti!
+      </div>
+    </section>
+  </body>
+</html>
