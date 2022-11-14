@@ -493,3 +493,309 @@ You can also select the elements with the help of class selector and apply the s
 ![id.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668382838683/_QlYzWWRE.png align="left")
 
 
+## Combinator
+
+The combinators helps to combine the group of selectors and select the specific element from the webpage.
+
+There are basically 5 types of combinators, which are listed as follows
+
+1. Descendant combinator
+
+2. Child combinator
+
+3. General sibling combinator
+
+4. Adjacent sibling combinator
+
+5. Column combinator 
+
+### Descendant combinator
+
+The " " (space) combinator selects nodes that are descendants of the first element.
+
+**Syntax**:
+
+```
+selector1 selector2 { CSS }
+``` 
+
+
+For example:
+
+```
+<style>
+      div {
+        color: chocolate;
+        font-size: 24px;
+        width: 400px;
+      }
+
+      span {
+        color: red;
+        font-size: 18px;
+      }
+
+      div span {
+        /* Here the font size 24px is applied*/
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+      voluptatum. Porro distinctio quisquam cum iure.
+      <span>Lorem, ipsum dolor</span>.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+  </body>
+</html>
+``` 
+
+**o/p**:
+
+![Decendent Combinator.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668455268252/iRdYinIXp.png align="left")
+
+### Child Combinators `>`
+
+The child `>` combinators selects the node that are the  direct child to the first element.
+
+**Syntax**:
+
+``` selector1 > selector2```
+
+For Ex:
+
+
+```
+ <style>
+      div {
+        color: chocolate;
+        font-size: 24px;
+        width: 400px;
+      }
+
+      span {
+        color: red;
+        font-size: 18px;
+      }
+
+      /* Here the font size is selected */
+
+      /* div span {
+        font-size: 24px;
+      } */
+
+      /* Child combinators */
+      div > span {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+      voluptatum. Porro distinctio quisquam cum iure.
+      <span>Lorem, ipsum dolor</span>. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit.
+    </div>
+  </body>
+</html>
+``` 
+
+**Output**:
+
+![child.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668459978761/ij-oulhmx.png align="left")
+
+### General sibling combinator `(~)`
+
+(~) separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element.
+
+**Syntax**: ```former_element ~ target_element { style properties }```
+
+For Example:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selector</title>
+    <style>
+      div {
+        color: chocolate;
+        font-size: 24px;
+        width: 400px;
+      }
+
+      span {
+        color: red;
+        font-size: 18px;
+      }
+
+      /* Here the font size is selected */
+
+      /* div span {
+        font-size: 24px;
+      } */
+
+      /* Child combinators */
+      div > span {
+        font-size: 24px;
+      }
+
+      code ~ span {
+        color: blue;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+      voluptatum. Porro distinctio quisquam cum iure.
+      <span>Lorem, ipsum dolor</span>. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit.
+    </div>
+    <span>This is not red.</span>
+    <p>Here is a paragraph.</p>
+    <code>Here is some code.</code>
+    <span>And here is a red span!</span>
+    <span>And here is a red span!</span>
+    <span>And here is a red span!</span>
+    <span>And here is a red span!</span>
+    <span>And here is a red span!</span>
+    <span>And this is a red span!</span>
+    <code>More code…</code>
+    <div>How are you?</div>
+    <p>Whatever it may be, keep smiling.</p>
+    <h1>Dream big</h1>
+    <span>And yet again this is a red span!</span>
+  </body>
+</html>
+```
+
+**Output**:
+
+![general.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668460321878/3EAYYkdaK.png align="left")
+
+### Adjacent sibling combinator `+`
+
+(+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
+
+For Example:
+
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selector</title>
+    <style>
+      div {
+        color: chocolate;
+        font-size: 24px;
+        width: 400px;
+      }
+
+      span {
+        color: red;
+        font-size: 18px;
+      }
+
+      /* Here the font size is selected */
+
+      /* div span {
+        font-size: 24px;
+      } */
+
+      /* Child combinators */
+      div > span {
+        font-size: 24px;
+      }
+
+      code ~ span {
+        color: blue;
+        font-size: 20px;
+      }
+
+      span + p {
+        color: rgb(181, 213, 21);
+        font-size: 24px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+      voluptatum. Porro distinctio quisquam cum iure.
+      <span>Lorem, ipsum dolor</span>. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit.
+    </div>
+    <span>This is not red.</span>
+    <p>Here is a paragraph.</p>
+    <code>Here is some code.</code>
+    <span>And here is a red span!</span>
+    <span>And here is a red span!</span>
+    <span>And here is a red span!</span>
+    <span>And here is a red span!</span>
+    <span>And here is a red span!</span>
+    <span>And this is a red span!</span>
+    <code>More code…</code>
+    <div>How are you?</div>
+    <p>Whatever it may be, keep smiling.</p>
+    <h1>Dream big</h1>
+    <span>And yet again this is a red span!</span>
+  </body>
+</html>
+``` 
+
+**Output**:
+
+![adjecent.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668460908499/qZEt-q-9H.png align="left")
+
+**Example 2**:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selector</title>
+    <style>
+      /* Selecting the 2nd elements */
+      li:first-of-type + li {
+        color: red;
+      }
+      li:nth-last-child(2n-1) + li {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Test 1</li>
+      <li>Test 2</li>
+      <li>Test 3</li>
+      <li>Test 4</li>
+      <li>Test 5</li>
+      <li>Test 6</li>
+      <li>Test 7</li>
+      <li>Test 8</li>
+      <li>Test 9</li>
+      <li>Test 10</li>
+    </ul>
+  </body>
+</html>
+```
+
+**Output**:
+![adjecent1.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668461354144/xEYX3dGXm.png align="left")
