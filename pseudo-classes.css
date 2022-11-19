@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ec6262;
+}
+
+.second-para {
+  color: #808080;
+}
+
+body {
+  background-image: url(../HTML/images/mikhail-fesenko-KniBt27bEsc-unsplash.jpg);
+  border: solid solid double double #888 1px;
+}
