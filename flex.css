@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pos {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: row; defalut value */
+  /* flex-direction: column; */
+  flex-direction: row-reverse;
+  /* flex-wrap: wrap; */
+  /* flex-wrap: nowrap; */
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap-reverse;
+  width: 100px;
+  border: 1px dotted #9c1717;
+}

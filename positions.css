@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Position: sticky | absolute | relative |  */
+
+.pos {
+  border: 10px dotted red;
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+#third {
+  position: relative;
+  top: 50px;
+  right: 30px;
+  left: 15px;
+  bottom: 20px;
+  border: 10px solid #26ff00;
+}
+
+#fourth {
+  position: absolute;
+  top: 150px;
+  right: 120px;
+  left: 150px;
+  bottom: 150px;
+  border: 10px solid #ff00c8;
+}
+
+#second {
+  position: fixed;
+  left: 150px;
+  border: 15px solid #777;
+}

@@ -10,11 +10,22 @@ p {
   color: #ec6262;
 }
 
-.second-para {
+/* .second-para {
   color: #808080;
+} */
+
+.second-para:fullscreen {
+  background-color: #a66e60;
 }
 
-body {
-  background-image: url(../HTML/images/mikhail-fesenko-KniBt27bEsc-unsplash.jpg);
-  border: solid solid double double #888 1px;
+.second-para:is(:fullscreen) {
+  background-color: #80b807;
+}
+
+#fs-toggle:not(:fullscreen) {
+  background-color: #afa;
+}
+
+#fs-toggle:fullscreen {
+  background-color: #faa;
 }
