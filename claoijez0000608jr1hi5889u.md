@@ -1,4 +1,4 @@
-# JS code execution
+# Execution of JS Code 🧑‍💻👨‍💻
 
 - Let's assume our code has just been complied, post compliation the **_Global Execution Context(GEC)_** is created. There can be only one _**GEC**_ irrespective the size of JS project.
   
