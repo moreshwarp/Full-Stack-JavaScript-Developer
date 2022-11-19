@@ -15,11 +15,14 @@
   display: flex;
   /* flex-direction: row; defalut value */
   /* flex-direction: column; */
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   /* flex-wrap: wrap; */
   /* flex-wrap: nowrap; */
   /* flex-direction: column-reverse; */
-  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap-reverse; */
+
+  /* flex-flow: column-reverse wrap; */
+  /* flex-flow: column-reverse wrap-reverse; */
   width: 100px;
   border: 1px dotted #9c1717;
 }
