@@ -1,6 +1,6 @@
 # An Introduction to JavaScript
 
-### What is JavaScript?
+## What is JavaScript?
 
 1.  One of the most popular and widely used programming languages in the world as per the Stack Overflow survey 2022.
     
@@ -28,7 +28,7 @@
 3.  But today you can build web/Mobile applications, Real-time Networking Apps command line tools or even Games with JavaScript.
     
 
-### Where does JavaScript code run?
+## Where does JavaScript code run?
 
 1.  JavaScript was originally designed to run only in **Browsers**, hence every browser has a JavaScript Engine to run its code, for example, **JavaScript Engine** in ***Firefox*** and ***Chrome*** is **Spider Monkey** and **V8.**
     
@@ -41,7 +41,7 @@
 5.  Bowsers and Node provide the runtime environment for our code(JavaScript).
     
 
-### What's the difference between JavaScript and ECMAScript?
+## What's the difference between JavaScript and ECMAScript?
 
 1.  **ECMAScript** is just a specification or rule to write JavaScript code.
     
