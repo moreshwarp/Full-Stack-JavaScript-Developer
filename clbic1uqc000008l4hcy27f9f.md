@@ -2,21 +2,21 @@
 
 ## What is JavaScript?
 
-1.  One of the most popular and widely used programming languages in the world as per the Stack Overflow survey 2022.
+1.  JavaScript was invented by [Brendan Eich](https://twitter.com/BrendanEich).
+    
+2.  One of the most popular and widely used programming languages in the world as per the Stack Overflow survey 2022.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670689923626/C7gWut989.png align="center")
     
-    ![](https://survey.stackoverflow.co/2022/#most-popular-technologies-language align="center")
+3.  It growing/booming more than any other language in the world Big companies like **Netflix**, **PayPal, Walmart** etc have built a lot of internal tools around it.
     
-2.  It growing/booming more than any other language in the world Big companies like **Netflix**, **PayPal, Walmart** etc have built a lot of internal tools around it.
+4.  For all the frontend frameworks the core base is JavaScript.
     
-3.  For all the frontend frameworks the core base is JavaScript.
+5.  The browser understands Javascript, and interaction with the website can be done with the help of Javascript.
     
-4.  The browser understands Javascript, and interaction with the website can be done with the help of Javascript.
+6.  Helps to write features for a website, it's also used at the backend i.e to interact with servers.
     
-5.  Helps to write features for a website, it's also used at the backend i.e to interact with servers.
-    
-6.  It is a logical layer of a website.
+7.  It is a logical layer of a website.
     
 
 ## What can you do with JavaScript?
