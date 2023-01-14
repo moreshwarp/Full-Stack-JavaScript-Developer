@@ -1,6 +1,6 @@
 # Role of JS in web programing
 
-Js is a **High-Level**, **Object-Oriented**, **Multi-Paradigm** programming language used on both client-side and server side, which allows you to build complex features in the webpage.
+JavaScript is a **High-Level**, **Object-Oriented**, **Multi-Paradigm** programming language used on both client-side and server side, which allows you to build complex features in the webpage.
 
 Also allows you to play with API both browser and 3rd party APIs (Twitter API, Google Maps API) a complex code, A very common use of JavaScript is to dynamically modify HTML and CSS to update a user interface, via the Document Object Model API.
 
