@@ -4,7 +4,7 @@ Js is a **High-Level**, **Object-Oriented**, **Multi-Paradigm** programming lang
 
 Also allows you to play with API both browser and 3rd party APIs (Twitter API, Google Maps API) a complex code, A very common use of JavaScript is to dynamically modify HTML and CSS to update a user interface, via the Document Object Model API.
 
-It help avoid the traffic on servers i.e the repetition of the request-response cycle.
+It helps avoid the traffic on servers i.e the repetition of the request-response cycle.
 
 ### High Level
 
@@ -28,7 +28,7 @@ You can manipulate the events on a web page with just a few lines of JS.
 
 ### ECMA
 
-ECMA International set the standards for JS after 2015 there are and shall be yearly release of ES modules.
+ECMA International set the standards for JS after 2015 there are and shall be yearly releases of ES modules.
 
 You just need the latest browser to execute the JS code nothing more, which off-course pretty much basic.
 
