@@ -171,7 +171,7 @@
         
     * The main difference between `input-type` `text` and 🔎 `Search` is how `browsers` handle them.
         
-    * A `role` attribute of value `search` on the `<form>` the element will cause screen readers to announce that a form is a search form.
+    * A `role` attribute of value `Search` on the `<form>` the element will cause screen readers to announce that a form is a search form.
         
 6. `<input type="submit">`
     
@@ -183,9 +183,22 @@
         
 7. `<input type="tel">`📞
     
+    * It will render the field where the user can enter or edit the 🔢 telephone number.
+        
+    * Unlike the `email` 📧 and `url` , the input value is not automatically validated before the form is submitted.
+        
 8. `<input type="text">`
     
+    * Will render the text box and this will help if you want to enter the data in the form of `text` i.e. oneliner.
+        
+    * Additional attributes can be enabled `name`, `maxlenght`, `placeholder` , `autocorrect` .
+        
+    * Used whenever the single line inputs are required, no automatic validation is required.
+        
 9. `<input type="time">`
+    
+    * It will give you the option to **add** or **edit** the `Hours` ,`Minute's` and optionally seconds.
+        
     
 10. `<input type="url">`
     
