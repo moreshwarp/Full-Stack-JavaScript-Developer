@@ -149,6 +149,10 @@
         
 3. `<input type="range">`
     
+    * It let the user provides `input` , specifically in the range of it `min` and `max` value.
+        
+    * Here there are too some additional attributes along with `name`, `id`, `step`,
+        
 4. `<input type="reset">`
     
 5. `<input type="search">` 🔎
