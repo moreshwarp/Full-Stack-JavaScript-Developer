@@ -151,9 +151,14 @@
     
     * It let the user provides `input` , specifically in the range of it `min` and `max` value.
         
-    * Here there are too some additional attributes along with `name`, `id`, `step`,
+    * Here there are too some additional attributes along with `name`, `id`, `step`.
+        
+    * It will give you a slider to play around with.
         
 4. `<input type="reset">`
+    
+    * It will `render` the button that will give you the option to clear the data that user 👤 has already entered.
+        
     
 5. `<input type="search">` 🔎
     
