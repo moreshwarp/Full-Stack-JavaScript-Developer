@@ -159,11 +159,28 @@
     
     * It will `render` the button that will give you the option to clear the data that user 👤 has already entered.
         
-    
+    * This will clear all inputs added by the user and the user 👤 can refill the form.
+        
 5. `<input type="search">` 🔎
     
+    * It will render a field where the user can search the queries.
+        
+    * This can be styled differently, also all the other additional attributes can be added to its value.
+        
+    * `pattern`, `maxlength`, `placeholder`, `spellcheck` .
+        
+    * The main difference between `input-type` `text` and 🔎 `Search` is how `browsers` handle them.
+        
+    * A `role` attribute of value `search` on the `<form>` the element will cause screen readers to announce that a form is a search form.
+        
 6. `<input type="submit">`
     
+    * This will render a `button` and on `Click` of this button 🔳 the event will be triggered.
+        
+    * all other attributes like `value`, `name`, 🆔 `id`.
+        
+    * `formaction` indicated the `URL` where the data is submitted. It takes precedence over the `action` attribute on the form element.
+        
 7. `<input type="tel">`📞
     
 8. `<input type="text">`
