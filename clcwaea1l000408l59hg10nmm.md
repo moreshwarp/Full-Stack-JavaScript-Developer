@@ -119,26 +119,48 @@
         
 10. `<input type="month">`
     
+    * It creates the input field for selecting the month from the given option, also the `format` for adding the `month` to the `YYYY-MM` .
+        
+    * There too we can add various other `attributes` `required`, `name`, `id`, `step`, `min`, `max`.
+        
 11. `<input type="number">` 🔢
     
-12. `<input type="password">`
+
+* It creates a field where the user can provide input in numeric form and all other non-numeric values are not accepted.
     
-13. `<input type="radio">` 📻
+* All other attributes like `placeholder`, `min`, `max`, `step` etc.
     
-14. `<input type="range">`
+* The input value is in the form of `text` you will have to typecast it while fetching the data at the backend.
     
-15. `<input type="reset">`
+
+1. `<input type="password">`
     
-16. `<input type="search">` 🔎
+    * It creates the field for the user 👤, where the user can add the password, it's in form of text also it's not readable.
+        
+    * The additional attributes like `minlength`, `maxlength` , `pattern` , `size` , `readonly` , `autocomplete` **on** and **off**.
+        
+2. `<input type="radio">` 📻
     
-17. `<input type="submit">`
+    * It gives the option to select from where only one option can be selected,
+        
+        they are highlighted when they are selected.
+        
+    * Other attributes like name, id, value and <mark>checked</mark> are also applicable in the radio button option.
+        
+3. `<input type="range">`
     
-18. `<input type="tel">`📞
+4. `<input type="reset">`
     
-19. `<input type="text">`
+5. `<input type="search">` 🔎
     
-20. `<input type="time">`
+6. `<input type="submit">`
     
-21. `<input type="url">`
+7. `<input type="tel">`📞
     
-22. `<input type="week">`
+8. `<input type="text">`
+    
+9. `<input type="time">`
+    
+10. `<input type="url">`
+    
+11. `<input type="week">`
