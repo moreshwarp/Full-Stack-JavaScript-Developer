@@ -191,15 +191,403 @@
     
     * Will render the text box and this will help if you want to enter the data in the form of `text` i.e. oneliner.
         
-    * Additional attributes can be enabled `name`, `maxlenght`, `placeholder` , `autocorrect` .
+    * Additional attributes can be enabled `name`, `maxlength`, `placeholder` , `autocorrect` .
         
     * Used whenever the single line inputs are required, no automatic validation is required.
         
 9. `<input type="time">`
     
-    * It will give you the option to **add** or **edit** the `Hours` ,`Minute's` and optionally seconds.
+    * It will give you the option to **add** or **edit** the `Hours` , `Minute's` and optionally seconds.
         
-    
 10. `<input type="url">`
     
+    * It allows you to enter or edit the `URL` .
+        
+    * It also gives you an attribute option to add i.e. `size` , `placeholder` , `maxlength`, `minlength` , `pattern`.
+        
+    * There are 2 content-level validation available one is at `input` level, which ensures the contents meet the requirements to be a valid `URL` .
+        
 11. `<input type="week">`
+    
+    * It creates an input field that allows the addition of an entry of a year.
+        
+    * You have the option to add the weeks and year via. `Value` .
+        
+    * You can also use the min mac value for variation.
+        
+
+```xml
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form in HTML</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <form action="" method="get" novalidate="true">
+      <div class="form-name">
+        <label>First Name:</label>
+        <input type="text" placeholder="Moreshwar" name="fname" required />
+      </div>
+      <div class="form_email">
+        <label>Email:</label>
+        <input
+          type="email"
+          placeholder="test@gmail.com"
+          name="email"
+          required
+        />
+      </div>
+      <div class="form-password">
+        <label>Password:</label>
+        <input
+          type="password"
+          placeholder="*********"
+          name="form_pwd"
+          required
+        />
+      </div>
+      <div>
+        <input type="date" required />
+      </div>
+
+      <div>
+        <label>Gender</label>
+        <input type="radio" value="male" id="male" name="gender" />
+        <label for="male">Male</label>
+        <input type="radio" value="female" id="female" name="gender" />
+        <label for="female">Female</label>
+      </div>
+
+      <!-- Checkbox-->
+      <code>
+        <input type="checkbox" value="html" id="html" checked />
+        <label for="html">HTML</label>
+        <input type="checkbox" value="css" id="css" checked />
+        <label for="css">CSS</label>
+        <input type="checkbox" value="taiwind" id="taiwind" />
+        <label for="taiwind">Tailwind</label>
+        <input type="checkbox" value="javascript" id="javascript" checked />
+        <label for="javascript">javascript</label>
+      </code>
+
+      <!-- Button -->
+      <div><input type="button" value="iNeuron" onclick="" disabled /></div>
+      <div>
+        <input type="button" value="AccessKey" onclick="" accesskey="s" />
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+
+      <!-- Color -->
+      <div>
+        <input type="color" id="color" value="#e66465" />
+        <label for="color">Color</label>
+      </div>
+
+      <!-- Date -->
+      <div>
+        <input
+          type="date"
+          id="date"
+          min="2023-01-01"
+          max="2023-01-31"
+          step="2"
+          checked
+          required
+        />
+        <label for="date">Date Element</label>
+      </div>
+
+      <!-- Datetime Local -->
+      <div>
+        <input
+          type="datetime-local"
+          id="local"
+          value="2023-01-01"
+          min="2023-01-01T00:00"
+          max="2023-01-31T00:00"
+          step="5"
+          required
+        />
+        <label for="local">Date Time Local</label>
+      </div>
+
+      <!-- Input Type Email in HTML -->
+      <style>
+        [type="email"]:valid {
+          background-color: #ade8ad;
+        }
+
+        [type="email"]:invalid {
+          background-color: #e7d6d6;
+        }
+      </style>
+      <div>
+        <label for="email_id">
+          Email Id:
+          <input
+            title="Enter you Email Id"
+            type="email"
+            id="email_id"
+            name="email_id"
+            maxlength="30"
+            size="30"
+            placeholder="test@gmail.com"
+            multiple
+            required
+          />
+        </label>
+      </div>
+      <!-- Input Type File in HTML -->
+      <div>
+        <label>
+          Upload your file
+          <input
+            type="file"
+            id="fileId"
+            name="fileId"
+            title="Upload File here "
+            accept="image/*,.doc,.xml"
+            size="2"
+            capture
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Upload your file
+          <input
+            type="file"
+            id="fileId"
+            name="fileId"
+            title="Upload File here "
+            accept="image/*,.doc,.pdf,.xml"
+            size="2"
+            multiple
+            capture="user"
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Upload your file
+          <input
+            type="file"
+            id="fileId"
+            name="fileId"
+            title="Upload File here "
+            accept="image/*,.doc,.pdf,.xml"
+            size="2"
+            multiple
+            capture="user"
+          />
+        </label>
+      </div>
+      <!-- (Input Type Hidden) -->
+      <div>
+        <label>
+          Hidden field:
+          <input type="hidden" name="hidden_field" id="hidden_field" />
+        </label>
+      </div>
+
+      <!-- Input type Image -->
+      <div>
+        <label for="image-field">
+          Image
+          <input
+            type="image"
+            name="image-field"
+            id="image-field"
+            src="/HTML/images/mikhail-fesenko-KniBt27bEsc-unsplash.jpg"
+            alt="Input Image"
+            width="200"
+            height="100"
+            formenctype="text/plain"
+            formmethod="get"
+            formtarget="_self"
+          />
+        </label>
+      </div>
+
+      <!-- Input Type Month -->
+      <div>
+        <label>
+          Month
+          <input
+            type="month"
+            name="month"
+            id="month"
+            min="2023-01"
+            max="2023-12"
+            value="2023-01"
+            step="2"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Input Type Numbers -->
+      <div>
+        <label id="number">
+          Numbers
+          <input
+            type="number"
+            name="number"
+            id="number"
+            value="10"
+            step="5"
+            min="10"
+            max="100"
+            placeholder="Please enter numeric value"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Input Type Password -->
+      <div>
+        <label for="password">
+          Passwords
+          <input
+            type="password"
+            name="password"
+            id="password"
+            pattern=""
+            autocomplete="new-password"
+            placeholder="Please Enter your Password"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Input Type Radio -->
+      <div>
+        <input type="radio" id="html1" name="radio" value="html" />
+        <label for="html1"> HTML </label>
+        <input type="radio" id="css1" name="radio" value="css" />
+        <label for="css1"> CSS </label>
+        <input type="radio" id="js1" name="radio" value="js" checked />
+        <label for="js1"> JavaScript </label>
+      </div>
+
+      <!-- Input Type Range -->
+      <div>
+        <label for="range">Range</label>
+        <input
+          type="range"
+          id="range"
+          name="range"
+          value="range"
+          min="10"
+          max="75"
+          step="5"
+          required
+        />
+      </div>
+
+      <!-- Input Type Reset -->
+      <div>
+        <label for="reset">Reset</label>
+        <input type="reset" id="range" name="reset" value="Reset" />
+      </div>
+
+      <!-- Input Type Search -->
+      <form role="search">
+        <div>
+          <label for="search">Search</label>
+          <input
+            type="serch"
+            id="search"
+            name="search"
+            spellcheck="true"
+            placeholder="Search your query"
+            required
+          />
+        </div>
+      </form>
+
+      <!-- Input Type tel -->
+      <div>
+        <label for="tel">
+          tel
+          <input
+            type="tel"
+            name="tel"
+            maxlength="10"
+            placeholder="tel. phone #"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            id="tel"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Input Type text -->
+      <div>
+        <label for="text">
+          Text
+          <input
+            type="text"
+            name="text"
+            minlength="10"
+            maxlength="100"
+            size="100"
+            spellcheck="true"
+            placeholder="Enter Text"
+            id="text"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Input Type time -->
+      <div>
+        <label for="time">
+          Time
+          <input type="time" name="time" id="time" required />
+        </label>
+      </div>
+
+      <!-- Input Type CheckBox -->
+      <div>
+        <label for="url">
+          URL
+          <input
+            type="url"
+            name="url"
+            id="url"
+            pattern="https://.*"
+            placeholder="https://google.com"
+            spellcheck="true"
+            size="30"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Input Type Week -->
+      <div>
+        <label for="week">
+          Week
+          <input
+            type="week"
+            name="week"
+            id="week"
+            min="2023-W02"
+            max="2023-W04"
+            value="2023-W02"
+            required
+          />
+        </label>
+      </div>
+    </form>
+  </body>
+</html>
+```
+
+Thanks!!! for reading
