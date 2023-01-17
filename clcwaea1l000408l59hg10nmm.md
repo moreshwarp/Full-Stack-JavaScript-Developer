@@ -213,8 +213,10 @@
         
     * You have the option to add the weeks and year via. `Value` .
         
-    * You can also use the min mac value for variation.
+    * You can also use the `min`, `max` value for variation.
         
+
+### `Code For Reference`
 
 ```xml
 <!DOCTYPE html>
