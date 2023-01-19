@@ -60,7 +60,7 @@ However, it has the following properties
     
 * ➿ `loop`: will keep playing the audio in the loop.
     
-* `muted`: It's a the attribute with a boolean value where the option to mute the audio 🔉 is provided when the page is loaded.
+* `muted` 🔕: It's an attribute with a boolean value where the option to mute the audio 🔉 is provided when the page is loaded.
     
 
 ```xml
