@@ -77,4 +77,4 @@ However, it has the following properties
 </html>
 ```
 
-Thanks fore reading.
+Thanks for reading.
