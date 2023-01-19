@@ -14,9 +14,9 @@ However, it has the following properties
     
 * `autoplay` : It will `autoplay` your video 📹 when the page is being loaded.
     
-* `loop` : It will keep playing the video 📹 in loop and also has boolean value, default value is false.
+* `loop` : It will keep playing the video 📹 in a loop and also has a boolean value, the default value is false.
     
-* 🔕 `muted` : It has a boolean(`true` / `false`) value, where
+* 🔕 `muted` : It has a boolean(`true` / `false`) value, where its default value is false the video will not be played even if `auto-play` is added and `muted` is not as an attribute.
     
 * Also, you can provide `inline` styling.
     
@@ -46,7 +46,7 @@ However, it has the following properties
 
 ## 🔉Audio Tag in HTML
 
-* Audio 🔉 tag will embed the sound content in the document 📄.
+* The audio 🔉 tag will embed the sound content in the document 📄.
     
 * And it will have the following attributes.
     
@@ -60,7 +60,7 @@ However, it has the following properties
     
 * ➿ `loop`: will keep playing the audio in the loop.
     
-* `muted`: Its a the attribute with boolean value where the option to mute the audio 🔉 is provided when the page is loaded.
+* `muted`: It's a the attribute with a boolean value where the option to mute the audio 🔉 is provided when the page is loaded.
     
 
 ```xml
