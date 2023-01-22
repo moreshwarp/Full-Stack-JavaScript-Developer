@@ -1,6 +1,6 @@
-# HTML CSS and Javascript
+## Full Stack JavaScript Developer
 
-### Article's
+### Article's on Web Technologies (HTML, CSS, JavaScript, React, GIT ETC.)
 
 1. [Server, Web Server & HTML](https://moreshwar.hashnode.dev/webserver-html)
 1. [An Introduction to JavaScript](https://moreshwar.hashnode.dev/javascript)
@@ -11,5 +11,3 @@
 1. [Array and Array Methods in JavaScript](https://moreshwar.hashnode.dev/array-methods-javascript)
 1. [Git and GitHub](https://moreshwar.hashnode.dev/git)
 1. [Role of JS in web programing](https://moreshwar.hashnode.dev/javascript-intro)
-
-##
