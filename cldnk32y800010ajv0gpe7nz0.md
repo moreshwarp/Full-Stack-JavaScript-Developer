@@ -6,6 +6,8 @@
 
 **<mark>LocalStorage is used to store the data for a particular domain.</mark>**
 
+`It allows 10MB of data to be stored.` and Local Storage is a new feature introduced in **HTML5.**
+
 Basically i.e **<mark>local storage</mark>** is a web storage object which is not sent to the server with each request. Whereas the cookie is been set to the server with each request.
 
 An where the developer doesn't want to send the data to the server with every request.
