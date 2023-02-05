@@ -14,7 +14,7 @@ Suppose you want to **save** the note from the **client** and you don't want tha
 
 Even if you refresh the page or restart the browser. The data stored will be saved and will not be lost.
 
-The data is been stored in form of **<mark>🗝 </mark>** & **<mark> Value</mark>** pair.
+The data is been stored in form of **<mark>🗝 </mark>** & **<mark>Value</mark>** pair.
 
 **<mark>setItem("Key", "Value")</mark>**
 
@@ -80,4 +80,11 @@ console.log(JSON.parse(localStorage.getItem("user")));
 
 localStorage.setItem("object", JSON.stringify(aObject));
 console.log(localStorage.getItem("object"));
+
+// key(index)
+console.log(localStorage.key(2));
+// length
+console.log(localStorage.length);
+// clear() will clear all the data from the local Storage
+localStorage.clear()
 ```
