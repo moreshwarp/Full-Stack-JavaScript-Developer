@@ -2,6 +2,8 @@
 
 The **SessionStorage** is used less often than the **LocalStorage** and all the properties and methods are the same as that of **LocalStorage**.
 
+`Session Storage Capacity is 5 MB`
+
 The difference is that while data in `localStorage` doesn't expire, data in `sessionStorage` is cleared when the *<mark>page session</mark>* ends.
 
 When the webpage or document is loaded in the tab in the browser a unique page session gets created and assigned to a particular tab. That page session is valid only for a particular tab.
@@ -54,10 +56,10 @@ Whenever the data is updated in **LocalStorage** and **SessionStorage,** storage
 
 1. **Key** 🗝
     
-2. **Old Value** \-&gt; Previous Value
+2. **Old Value** -&gt; Previous Value
     
 3. **new Value** -&gt; New Value
     
-4. **URL** \-&gt; Page URL
+4. **URL** -&gt; Page URL
     
-5. **StorageArea** \-&gt; Local or SessionStorage
+5. **StorageArea** -&gt; Local or SessionStorage
