@@ -32,21 +32,32 @@ sessionStorage.setItem("nameSession1", "testSession1");
 console.log(sessionStorage.getItem("nameSession"));
 console.log(sessionStorage.getItem("nameSession1"));
 
+document.onstorage = (e) => {
+  alert("updated");
+  console.log(e);
+};
+
+console.log(sessionStorage.key(0));
+console.log(sessionStorage.key(1));
+console.log(sessionStorage.key(2));
+console.log(sessionStorage.key(5));
+
 console.log(`Removing the Session Storage with key name ${nameSession1} removed`);
+
 sessionStorage.removeItem("nameSession1");
 sessionStorage.clear();
 ```
 
 ### **Storage Event**
 
-Whenever the data is updated in **LocalStorage** and **SessionStorage,** storage events triggers with these properties:
+Whenever the data is updated in **LocalStorage** and **SessionStorage,** storage events trigger with these properties:
 
-1. Key 🗝
+1. **Key** 🗝
     
-2. Old Value -&gt; Previous Value
+2. **Old Value** \-&gt; Previous Value
     
-3. new Value -&gt; New Value
+3. **new Value** -&gt; New Value
     
-4. URL -&gt; Page URL
+4. **URL** \-&gt; Page URL
     
-5. StorageArea -&gt; Local or SessionStorage
+5. **StorageArea** \-&gt; Local or SessionStorage
