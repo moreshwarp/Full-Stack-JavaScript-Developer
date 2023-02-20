@@ -33,6 +33,4 @@ The reason it's called a **<mark>thread of execution</mark>** is that it's like 
 
 When we say **Synchronous Single threaded** that means JavaScript can execute single command at a time and that too in a specific order.
 
-<mark>This means it can go to the other line only when its previous line is executed.</mark>
-
-And JavaScript is not possible without this beautiful execution context at all.
+<mark>This means it can go to the other line only when its previous line is executed</mark>, and JavaScript is not possible without this beautiful execution context at all.
