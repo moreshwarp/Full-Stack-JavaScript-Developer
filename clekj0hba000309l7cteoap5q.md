@@ -1,4 +1,4 @@
-# Hoisting in JS✍️
+# ✍️✍️Hoisting ✍️✍️
 
 Hosting in JavaScript refers to a process in which the `declarations` in the `code` appears to move at the top of the code before execution.
 
