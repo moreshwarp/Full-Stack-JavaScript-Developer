@@ -1,0 +1,15 @@
+{
+  "name": "llm-reminder",
+  "version": "1.0.0",
+  "description": "Minimal LLM-based reminder system",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node -e \"console.log('No tests yet');\""
+  },
+  "dependencies": {
+    "openai": "^4.25.1",
+    "node-schedule": "^2.1.1"
+  }
+}
